@@ -1,0 +1,117 @@
+:root {
+    --fontcolor: yellow;
+    --secondary-color: red;
+    --tertiary-color: #39a6b2;
+    --backgroundimage: url('../images/marvel.jpg');
+    --backgroundcolor: black;
+    --header-height: 4rem;
+    --footer-height: 10px;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+    background-color: black;
+} */
+/* Beginning Header CSS */
+header {
+    padding: 20px 35px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    background-image: var(--backgroundimage);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    border-bottom: 3px solid var(--fontcolor);
+    z-index: 9999;
+    min-height: var(--header-height);
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--fontcolor);
+    margin: 0;
+}
+header a {
+    text-decoration: none;
+    color: var(--fontcolor);
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+} 
+header nav ul li a:hover {
+    background: var(--fontcolor);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+/* End Header CSS */ 
+main {
+    background-color: black;
+    min-height: calc(94vh - var(--header-height) - var(--footer-height));
+}
+footer {
+    background: var(--fontcolor);
+    width: 100%;
+    padding: 10px 35px;
+    min-height: var(--footer-height);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: var(--secondary-color);
+  }
+  
+
+section {
+    padding: 60px;
+  }
+.marvel {
+    height: 800px;
+    width: 100%;
+    background-image: var(--backgroundimage);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-bottom: 3px solid var(--fontcolor);
+}
+
+.hero-cta {
+  color: var(--secondary-color);
+}
