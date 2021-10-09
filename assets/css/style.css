@@ -39,6 +39,7 @@ header h1 {
     font-size: 36px;
     color: var(--fontcolor);
     margin: 0;
+    flex: 2;
 }
 header a {
     text-decoration: none;
@@ -64,11 +65,13 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
-  }
+}
+header img {
+    max-width: 3%;
+}
 /* End Header CSS */ 
 main {
     background-color: black;
-    min-height: calc(94vh - var(--header-height) - var(--footer-height));
 }
 footer {
     background: var(--fontcolor);
@@ -78,27 +81,16 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-  footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-  }
-  
-  footer div {
-    line-height: 1.5;
-    text-align: right;
-  }
-  
-  footer a {
-    color: var(--secondary-color);
-  }
-  
-
+}
+footer h2 {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin: 0;
+}
 section {
     padding: 60px;
-  }
+    color: var(--secondary-color);
+}
 .marvel {
     height: 800px;
     width: 100%;
@@ -111,7 +103,45 @@ section {
     align-items: flex-start;
     border-bottom: 3px solid var(--fontcolor);
 }
+.flex-row {
+    font-size: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-row h2 {
+    border-bottom: 3px solid var(--fontcolor);
+    width: 30%;
+}
+.flex-row p {
+    padding-top: 30px;
+    width: 70%;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+} 
 
-.hero-cta {
-  color: var(--secondary-color);
+.work {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+.work img{
+    flex: 1 0 0;
+    max-width: 90%;
+    border: 4px solid blue;
+}
+
+.work img:hover {
+    border-color: green;
+    max-width: 100%;
 }
