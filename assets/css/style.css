@@ -112,6 +112,7 @@ section {
 .flex-row h2 {
     border-bottom: 3px solid var(--fontcolor);
     width: 30%;
+    color: var(--fontcolor);
 }
 .flex-row p {
     padding-top: 30px;
@@ -132,7 +133,7 @@ section {
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 30px;
 }
 .work img{
     flex: 1 0 0;
@@ -144,4 +145,16 @@ to green and increase width */
 .work img:hover {
     border-color: green;
     max-width: 100%;
+}
+.contacts ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.contacts a {
+    color: var(--secondary-color);
 }
