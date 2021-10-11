@@ -197,10 +197,52 @@ to green and increase width */
         height: 300px;
     }
     .flex-row {
-        font-size: 24px;
+        font-size: 28px;
+    }
+    .flex-row p {
+        padding-top: 10px;
+        width: 80%;
     }
     .work {
         padding: 20px;
     }
 }
+/* Resizing for 375px Mobile phone */
+@media screen and (max-width: 375px) {
+    section {
+        padding: 5px;
+    }
+    header {
+        padding: 1px;
+    }
+    header nav ul li a {
+        padding: 5px;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+    header img {
+        padding-right: 5px;
+        max-height: 20px;
+        max-width: 100%;
+    }
+    header nav ul li a {
+        font-size: 12px;
+    } 
+    .marvel {
+        height: 200px;
+    }
+    .flex-row {
+        font-size: 12px;
+    }
+    .work {
+        padding: 5px;
+        font-size: 20px;
+    }
+    .work img{
+        max-width: 50%;
+    }
+    .contacts ul {
+        font-size: 20px;
+    }
 }
