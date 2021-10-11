@@ -161,3 +161,46 @@ to green and increase width */
 .contacts a {
     color: var(--secondary-color);
 }
+/* Resize for 768px (Ipad) */
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+    .marvel {
+        height: 400px;
+    }
+    .flex-row h2 {
+        padding-top: 90px;
+        width: 50%;
+    }
+    .work {
+        padding: 20px;
+    }
+}
+/* Resize for 575 px */  
+@media screen and (max-width: 575px) {
+    header h1 {
+        font-size: 20px;
+    }
+    section {
+        padding: 15px;
+    }
+    header img {
+        padding-right: 5px;
+        max-height: 30px;
+        max-width: 100%;
+    }
+    header nav ul li a {
+        font-size: 18px;
+    } 
+    .marvel {
+        height: 300px;
+    }
+    .flex-row {
+        font-size: 24px;
+    }
+    .work {
+        padding: 20px;
+    }
+}
+}
